@@ -32,3 +32,4 @@ Thumbs.db
 yarn-error.log
 package-lock.json
 yarn.lock
+composer.lock

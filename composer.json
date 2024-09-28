@@ -102,8 +102,12 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
             "php-http/discovery": true,
             "wikimedia/composer-merge-plugin": true
+=======
+            "treeware/plant": false
+>>>>>>> e39f269ce6b195f52d69789445d07540907e9345
         }
     },
     "minimum-stability": "dev",
