@@ -3,9 +3,10 @@
 ---
 
 ### STEP (first time only):
-1. kool run setup
-2. kool run artisan migrate --seed
-3. done
+```
+kool run setup
+kool run artisan migrate --seed
+```
 
 kool start to start containers
 kool stop to stop containers
