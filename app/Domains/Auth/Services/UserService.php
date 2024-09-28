@@ -155,6 +155,8 @@ class UserService extends BaseService
     public function update(User $user, array $data = []): User
     {
         DB::beginTransaction();
+        $data['roles'] = array_map('intval', $data['roles']);
+        $data['permissions'] = array_map('intval', $data['permissions']);
 
         try {
             $user->update([
