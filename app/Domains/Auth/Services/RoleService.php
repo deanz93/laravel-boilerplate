@@ -64,6 +64,7 @@ class RoleService extends BaseService
     public function update(Role $role, array $data = []): Role
     {
         DB::beginTransaction();
+        $data['permissions'] = array_map('intval', $data['permissions']);
 
         try {
             $role->update(['type' => $data['type'], 'name' => $data['name']]);
