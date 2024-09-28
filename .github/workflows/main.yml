@@ -39,7 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --no-interaction --no-update --prefer-dist --no-interaction
+          composer install --no-interaction --prefer-dist --no-interaction
 
       - name: Install NPM Dependencies
         run: npm install
